@@ -5,6 +5,8 @@ import Redirecionar from './views/user/Redirecionar'
 import SignIn from './views/user/SignIn'
 import SignUp from './views/user/SignUp'
 import ResetarSenha from './views/user/ResetarSenha'
+import MeusLinks from './views/app/MeusLinks'
+
 function Routes() {
     return(
     <BrowserRouter>
@@ -20,6 +22,9 @@ function Routes() {
             </Route>
             <Route path="/resetar-senha">
                 <ResetarSenha/>
+            </Route>
+            <Route path="/meus-links">
+                <MeusLinks/>
             </Route>
             <Route path="/:uri">
                 <Redirecionar/>

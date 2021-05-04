@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Pagina404 from '../Pagina404'
 
+
 function Child() {
     let { uri } = useParams();
     if (uri === "google") {

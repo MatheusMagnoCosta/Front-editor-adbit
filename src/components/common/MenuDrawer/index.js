@@ -5,11 +5,11 @@ export default class index extends Component {
     render() {
         return (
             <ul className="sidebar-nav">
-                <Link to="#" className="sidebar-link">
+                <Link to="/" className="sidebar-link">
                     <i className="align-middle" data-feather="sliders" />
                     <span className="align-middle">Visão geral</span>
                 </Link>
-                <Link to="#" className="sidebar-link">
+                <Link to="/meus-links" className="sidebar-link">
                     <i className="align-middle" data-feather="sliders" />
                     <span className="align-middle">Meus Links</span>
                 </Link>
