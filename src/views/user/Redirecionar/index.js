@@ -5,16 +5,23 @@ import {
     Route,
     useParams
 } from "react-router-dom";
+import Pagina404 from '../Pagina404'
 
 function Child() {
     let { uri } = useParams();
-    if (uri === "google"){
+    if (uri === "google") {
         window.location.replace("https://www.google.com/")
-    }else{
-        return(
-            <h3>ERRO 404, O ENDEREÇO "{uri}" NÃO EXISTE</h3>
+    } else {
+        return (
+            <Router>
+                <Switch>
+                    <Route>
+                        <Pagina404/>
+                    </Route>
+                </Switch>
+            </Router>
         )
-    } 
+    }
 }
 export default function Params() {
     return (
